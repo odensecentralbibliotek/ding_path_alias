@@ -20,27 +20,6 @@ function ding_path_alias_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_ding_path_alias_library_about_page_ding_library_da_pattern';
-  $strongarm->value = 'biblioteker/[node:field_slug]/om';
-  $export['pathauto_ding_path_alias_library_about_page_ding_library_da_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_ding_path_alias_library_event_page_ding_library_da_pattern';
-  $strongarm->value = 'biblioteker/[node:field_slug]/arrangementer';
-  $export['pathauto_ding_path_alias_library_event_page_ding_library_da_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_ding_path_alias_library_news_page_ding_library_da_pattern';
-  $strongarm->value = 'biblioteker/[node:field_slug]/nyheder';
-  $export['pathauto_ding_path_alias_library_news_page_ding_library_da_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_ignore_words';
   $strongarm->value = '';
   $export['pathauto_ignore_words'] = $strongarm;
@@ -63,8 +42,15 @@ function ding_path_alias_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_pattern';
-  $strongarm->value = '[node:title]';
+  $strongarm->value = '';
   $export['pathauto_node_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_punctuation_hyphen';
+  $strongarm->value = 1;
+  $export['pathauto_punctuation_hyphen'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
